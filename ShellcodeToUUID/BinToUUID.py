@@ -22,7 +22,7 @@ def convert_to_uuid(shellcode):
 
 
 def main(file_path):
-    with open(bin_file, 'rb') as bin_file:
+    with open(file_path, 'rb') as bin_file:
         byte_arr_file = bytearray(bin_file.read())
         uuids = convert_to_uuid(bytes(byte_arr_file))
         print(*uuids, sep=",\n")

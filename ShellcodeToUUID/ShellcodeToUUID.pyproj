@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>a961cf15-4203-4737-a07b-dc2365eb6ab2</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>ShellcodeToUUID.py</StartupFile>
+    <StartupFile>BinToUUID.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,6 +21,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="BinToUUID.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="ShellcodeToUUID.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />

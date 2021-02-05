@@ -49,5 +49,5 @@ def main():
     uuids = convert_to_uuid(buf)
     print(*uuids, sep=",\n")
 
-
-main()
+if __name__ == "__main__":
+    main()

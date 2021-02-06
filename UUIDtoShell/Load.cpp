@@ -20,8 +20,9 @@ int main()
         if (status != RPC_S_OK) {
 #ifdef _DEBUG
         	printf("UuidFromStringA() != S_OK\n");
-            CloseHandle(ha);
 #endif
+        	CloseHandle(ha);
+
             return -1;
         }
         hptr += 16;
